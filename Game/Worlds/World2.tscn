@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://GrassBackground.png" type="Texture" id=1]
+[ext_resource path="res://Environment/Scenes/Grass.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player/Scenes/Player.tscn" type="PackedScene" id=3]
+
+[node name="World2" type="Node2D"]
+
+[node name="GrassBackground" type="Sprite" parent="."]
+position = Vector2( 31.8182, 32.3124 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 300, 300 )
+
+[node name="Grass2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -47.5, 60 )
+
+[node name="Grass" parent="." instance=ExtResource( 2 )]
+position = Vector2( -26, 78 )
+
+[node name="Grass3" parent="." instance=ExtResource( 2 )]
+position = Vector2( -57.5, 86 )
+
+[node name="Grass4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 38.2781, 11.6796 )
+
+[node name="Grass5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 59.7781, 29.6796 )
+
+[node name="Grass6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 28.2781, 37.6796 )
+
+[node name="Grass7" parent="." instance=ExtResource( 2 )]
+position = Vector2( -28.022, -7.7984 )
+
+[node name="Grass8" parent="." instance=ExtResource( 2 )]
+position = Vector2( -6.52202, 10.2016 )
+
+[node name="Grass9" parent="." instance=ExtResource( 2 )]
+position = Vector2( -38.022, 18.2016 )
+
+[node name="Grass10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 121.06, 86.9695 )
+
+[node name="Grass11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 142.56, 104.97 )
+
+[node name="Grass12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 111.06, 112.97 )
+
+[node name="Grass13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 121.809, 13.5525 )
+
+[node name="Grass14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 143.309, 31.5525 )
+
+[node name="Grass15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 111.809, 39.5525 )
+
+[node name="Grass16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 77.6086, 83.5983 )
+
+[node name="Grass17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 99.1086, 101.598 )
+
+[node name="Grass18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 67.6086, 109.598 )
+
+[node name="Grass19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1.19498, 99.3306 )
+
+[node name="Grass20" parent="." instance=ExtResource( 2 )]
+position = Vector2( 22.695, 117.331 )
+
+[node name="Grass21" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8.80502, 125.331 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 38.0543, 60.3873 )
