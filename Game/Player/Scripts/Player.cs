@@ -124,7 +124,7 @@ public class Player : KinematicBody2D
             {
                 PlayerSprite.FlipH = current_direction.x < 0;
                 PlayerShadow.GlobalPosition = current_direction.x < 0 ? new Vector2(GlobalPosition.x + 1, GlobalPosition.y) : new Vector2(GlobalPosition.x-(float)1.5, GlobalPosition.y);
-                Console.WriteLine(PlayerShadow.GlobalPosition);
+                //Console.WriteLine(PlayerShadow.GlobalPosition);
                 FacingDirection = current_direction.x < 0;
                 PlayerHitBox.RotationDegrees = FacingDirection == true ? 0 : 180;
             } 
@@ -203,7 +203,9 @@ public class Player : KinematicBody2D
             stats.Health = 1;
             currentState = states.IDLE;
             PlayerStateMachine.Travel("Idle");
+            PlayerCollisionBox.SetDeferred("disabled", false);
         }
+
     }
 
     // HELPER FUNCTIONS
